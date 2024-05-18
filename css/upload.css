@@ -1,0 +1,326 @@
+body {
+    background-color: #5375E2;
+    overflow: hidden;
+  }
+  /* === header Styles === */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px; /* Adjust as needed */
+  }
+  
+  .logo img {
+    width: 100px; /* Adjust the width of the logo */
+  }
+  
+  .burger-menu button {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+  }
+/* === Menu Styles === */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Adjust the position to be on the right */
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  transition: right 0.3s ease; /* Change left to right for transition */
+  padding-top: 50px; /* Adjust padding as needed */
+}
+
+.side-menu button#close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px; /* Adjust position as needed */
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 24px;
+  cursor: pointer;
+}
+  
+  .side-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .side-menu ul li {
+    padding: 10px 0;
+  }
+  
+  .side-menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .side-menu ul li a:hover {
+    background-color: #4457a6;
+  }
+  
+  /* === form Styles === */
+  .flex-cont{
+    display: flex;
+    flex-direction: row;
+  }
+  .input-box.button input{
+    width: 200px;
+    height: 70px;
+    color: #fff;
+    border-radius: 13px;
+    letter-spacing: 1px;
+    margin: 30px;
+    border: none;
+    background: #253A7D;
+    cursor: pointer;
+  }
+  .input-box.button input:hover{
+    background: #9ab1fc;
+  }
+
+
+  .categ{
+    margin: auto;
+    font-size: 18px;
+    background-color: #253A7D;
+    color: #ffffff;
+    width: fit-content;
+    height: 70px;
+    padding: 5px;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+  .categ select{
+    width: fit-content;
+    height: auto;
+    position: relative;
+    
+  }
+
+  /* === Wrapper Styles === */
+  #FileUpload {
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper {
+    margin: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-radius: 10px;
+    background-color: white;
+    width: 415px;
+  }
+  
+  /* === Upload Box === */
+  #drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  #drop-area.hover {
+    background-color: #f7f7f7;
+  }
+  #fileInput {
+    display: none;
+  }
+  
+  
+  /* === Uploaded Files === */
+  .uploaded {
+    width: 375px;
+    margin: 10px;
+    background-color: #e6f5e9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .file {
+    display: flex;
+    flex-direction: column;
+  }
+  .file__name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 300px;
+    line-height: 0;
+    color: #0c3214;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+  .fa-times:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .fa-file-pdf {
+    padding: 15px;
+    font-size: 40px;
+    color: #0c3214;
+  }
+/* tables */
+table {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+  @media only screen and (max-width: 600px){
+    /* === header Styles === */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 10px 20px; /* Adjust as needed */
+    }
+    /* === form Styles === */
+    .flex-cont{
+      display: flex;
+      flex-direction: row;
+      padding-left: 58px;
+    }
+    .input-box.button input{
+      width: 100px;
+      height: 70px;
+      color: #fff;
+      border-radius: 13px;
+      letter-spacing: 1px;
+      margin: 30px;
+      border: none;
+      background: #253A7D;
+      cursor: pointer;
+    }
+    .categ{
+      margin: 30px;
+      font-size: 18px;
+      background-color: #253A7D;
+      color: #ffffff;
+      width: 120px;
+      height: 70px;
+      padding: 5px;
+      padding-top: 20px;
+      border-radius: 10px;
+    }
+    .categ select{
+      width: 20px;
+      height: 20px;
+      position: relative;
+      
+    }
+
+    /* === Upload Box === */
+    .wrapper {
+      margin: 30px;
+      margin-top: 10px;
+      padding: 10px;
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      border-radius: 10px;
+      background-color: white;
+      width: 380px;
+    }
+
+    /* === Uploaded Files === */
+    .uploaded {
+      width: 330px;
+      margin: 10px;
+      background-color: #e6f5e9;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    /* Tables */
+
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+
+  }

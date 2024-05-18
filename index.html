@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="shortcut icon" href="rev.png" />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Reviewers</title>
+    <style>
+        body {
+            background-color: #5375E2;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header">
+            <h1>Log in</h1>
+            <h3>LSPU Quizlet/Reviewer</h3>
+        </div>
+        <div class="login">
+            <form action="php/login.php" method="POST">
+                <div><label for="email"> E-MAIL </label></div>
+                <div><input type="email" name="email" required /></div>
+                <div><label for="password"> PASSWORD </label></div>
+                <div><input type="password" name="pass" required /></div>
+                <div class="flex-container-1">
+                    <div><a href="pages/regis.html">Sign up</a></div>
+                    <div><a href="#">Forgot Password</a></div>
+                </div>
+                <button type="submit" name="login" value="submitted_value"> SIGN IN </button>
+            </form>
+        </div>
+    </div>
+    <canvas id="background"></canvas>
+    <script src="js/background.js"></script>
+</body>
+</html>

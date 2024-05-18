@@ -1,0 +1,74 @@
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+    background-color: #fcfcfc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 200px auto;
+  }
+  
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .message {
+    color: #333;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    text-align: center
+  }
+  
+  .input-field {
+    position: relative;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    width: 300px;
+    margin: 15px 0;
+  }
+  
+  .input-field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+  }
+  
+  .input-field input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .input-field input:focus ~ label,
+  .input-field input:valid ~ label {
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+  }
+  
+  .action {
+    margin-top: 24px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    align-self: end;
+  }
